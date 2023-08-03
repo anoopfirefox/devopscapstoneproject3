@@ -27,6 +27,7 @@ resource "aws_autoscaling_policy" "capstone_asg_policy" {
     predefined_metric_specification {
       predefined_metric_type = "ASGAverageCPUUtilization"
     }
+    target_value = "20"
   }
 }
 

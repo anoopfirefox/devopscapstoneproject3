@@ -15,7 +15,7 @@ resource "aws_security_group" "capstone_sg" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  egress = {
+  egress {
     description = "Allow Outgoing Traffic"
     from_port   = 0
     to_port     = 0
