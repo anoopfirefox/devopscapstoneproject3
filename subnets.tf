@@ -14,11 +14,11 @@ resource "aws_subnet" "capstonesubnet_b" {
     Name = "capstonesubnet_b"
   }
 }
-resource "aws_subnet" "capstonesubnet_c" {
-  vpc_id            = aws_vpc.devops_vpc.id
-  cidr_block        = "10.0.3.0/24"
-  availability_zone = "us-east-2c"
-  tags = {
-    Name = "capstonesubnet_c"
-  }
-}
+#resource "aws_subnet" "capstonesubnet_c" {
+#  vpc_id            = aws_vpc.devops_vpc.id
+#  cidr_block        = "10.0.3.0/24"
+#  availability_zone = "us-east-2c"
+#  tags = {
+#    Name = "capstonesubnet_c"
+#  }
+#}
